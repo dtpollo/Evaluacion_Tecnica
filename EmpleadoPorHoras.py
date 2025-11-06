@@ -5,5 +5,6 @@ class EmpleadoPorHoras(Empleado):
         super().__init__(nombre, apellido, id, salario_base)
         self._horas_trabajadas = horas_trabajadas
         self._pago_por_hora = pago_por_hora
-    
-    pass
+
+    def calcularSalario(self):
+        return self._horas_trabajadas * self._pago_por_hora

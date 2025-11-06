@@ -1,4 +1,5 @@
 from Empleados import Empleado
 
 class EmpleadoTiempoCompleto(Empleado):
-    pass
+    def calcularSalario(self):
+        return self._salario_base + self._salario_base * 0.10
