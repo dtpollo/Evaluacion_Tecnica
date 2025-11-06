@@ -17,3 +17,10 @@ class Empleado:
         print(f"Empleado: {self._nombre} {self._apellido}")
         print(f"ID: {self._ID}")
         print(f"Salario: $ {round(self.calcularSalario(), 2)}")
+
+    # Getters
+    def get_nombre(self):
+        return self._nombre
+    
+    def get_salario_base(self):
+        return self._salario_base
