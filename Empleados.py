@@ -8,12 +8,12 @@ class Empleado:
 
     # Metodo 1 (Se puede sobreescribir en clases hijas)
     # Calcula el salario de los empleados
-    def calcular_salario(self):
+    def calcularSalario(self):
         return self._salario_base
 
     # Metodo 2
     # Imprime los datos del empleado
-    def mostrar_informacion(self):
+    def mostrarInformacion(self):
         print(f"Empleado: {self._nombre} {self._apellido}")
         print(f"ID: {self._ID}")
-        print(f"Salario: $ {round(self.calcular_salario(), 2)}")
+        print(f"Salario: $ {round(self.calcularSalario(), 2)}")
